@@ -6,6 +6,13 @@ export const AppProvider = ({children})=>{
     const [err, setErr]=useState(null)
 
 
-    const signup = ( names,email,password)=>{
+    const signup = ( names,email,password,phoneNumber)=>{
         setErr(null)
+}
+    
+        return(
+            <AppContext.Provider>
+                {children}
+            </AppContext.Provider>
+        )
 }
