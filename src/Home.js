@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom'
 import { AppContext } from './Context'
 
 export const Home = () => {
-    const { user } = useContext(AppContext)
+    const { user, logout } = useContext(AppContext)
     if(!user){
         return(
             <div>
@@ -19,8 +19,10 @@ export const Home = () => {
     return(
         <div>
             <h1>
-                Welcome <b>{user},</b>Thank you for signing up.
+                Welcome <b>{user.names},</b>Thank you for signing up.
             </h1>
         </div>
     )
 }
+
+export default Home
