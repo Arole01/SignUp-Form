@@ -5,6 +5,7 @@ import { useNavigate } from 'react-router-dom'
 import * as Yup from 'yup'
 import { useForm } from 'react-hook-form'
 import { yupResolver } from '@hookform/resolvers/yup'
+import "./Signup.css"
 
 export const Signup = () => {
 
