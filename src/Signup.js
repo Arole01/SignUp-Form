@@ -54,7 +54,7 @@ export const Signup = () => {
         {errors.password && <p style={{ color: 'red' }}>{errors.password.message}</p>}
             <input type="text" placeholder="Phone Number" {...register('phoneNumber')} />
         {errors.phoneNumber && <p style={{ color: 'red' }}>{errors.phoneNumber.message}</p>}
-            <button type="submit">Sign Up</button>
+            <button className='btn' type="submit">Sign Up</button>
         </form>
         {err && <p style={{ color: 'red' }}>{err}</p>}
         {user && <p style={{ color: 'blue' }}>Signup successful</p>}

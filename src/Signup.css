@@ -19,3 +19,13 @@ input {
 input:hover {
     background: #C2A68C;
 }
+
+.btn{
+    display: block;
+    margin: 20px 0 5px 10px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background: #FFECC0;
+}
